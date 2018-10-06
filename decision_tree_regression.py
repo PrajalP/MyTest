@@ -26,3 +26,25 @@ for depth in maximum_depth_of_tree:
     plt.scatter(x_train, y_train, color='black')
     plt.plot(x.reshape((len(x), 1)), model.predict(x.reshape((len(x), 1))), color='blue')
     plt.title('Line fit to training data with max_depth='+str(depth))
+
+    
+   
+    plt.show()
+    mean_train_error = np.mean( (y_train - model.predict(x_train.reshape(len(x_train),1)))**2 )
+    mean_val_error = np.mean( (y_val - model.predict(x_val.reshape(len(x_val),1)))**2 )
+    mean_test_error = np.mean( (y_test - model.predict(x_test.reshape(len(x_test),1)))**2 )
+    
+    train_err_arr.append(mean_train_error)
+    val_err_arr.append(mean_val_error)
+    test_err_arr.append(mean_test_error)
+
+    print 'Training MSE: ', mean_train_error, '\nValidation MSE: ', mean_val_error, '\nTest MSE: ', mean_test_error
+    
+
+    plt.show()
+    mean_train_error = np.mean( (y_train - model.predict(x_train.reshape(len(x_train),1)))**2 )
+    mean_val_error = np.mean( (y_val - model.predict(x_val.reshape(len(x_val),1)))**2 )
+    mean_test_error = np.mean( (y_test - model.predict(x_test.reshape(len(x_test),1)))**2 )
+    
+
+coder
