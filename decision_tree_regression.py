@@ -2,6 +2,7 @@ import numpy as np
 from sklearn import linear_model, datasets, tree
 import matplotlib.pyplot as plt
 number_of_samples = 100
+jkj
 x = np.linspace(-np.pi, np.pi, number_of_samples)
 y = 0.5 * x + np.sin(x)+np.random.random(x.shape)
 plt.scatter(x,y,color='black')
