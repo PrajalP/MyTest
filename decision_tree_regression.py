@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np4
 from sklearn import linear_model, datasets, tree
 import matplotlib.pyplot as plt
 number_of_samples = 100
